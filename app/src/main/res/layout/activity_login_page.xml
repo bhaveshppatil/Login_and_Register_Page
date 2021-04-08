@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginPage">
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_50"
+        android:background="@color/white"
+        android:fontFamily="@font/coiny"
+        android:textColor="@color/black"
+        android:text="Login"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/tvLoginSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLogin"
+        android:layout_marginStart="@dimen/dp_30"
+        android:fontFamily="casual"
+        android:text="@string/Login_caption"
+        android:textSize="17sp" />
+
+
+    <EditText
+        android:id="@+id/etLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tvLoginSubtitle"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/et"
+        android:hint="Enter email"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/etLoginEmail"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_30"
+        android:background="@drawable/et"
+        android:hint="Enter Password"
+        android:inputType="textWebPassword"
+        android:padding="15dp"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLoginPassword"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:background="#313435"
+        android:fontFamily="@font/copse"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        app:backgroundTint="#2D2F31" />
+
+    <TextView
+        android:id="@+id/btnLoginClickForSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etLoginPassword"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/black"
+        android:text="Click here for Sign Up"
+        android:layout_marginEnd="@dimen/dp_30"/>
+
+    <ImageView
+        android:id="@+id/btnGoogleLoginPage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnLogin"
+        android:layout_marginStart="@dimen/dp_100"
+        android:layout_marginTop="@dimen/dp_30"
+        android:src="@drawable/google" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/btnLogin"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_100"
+        android:src="@drawable/facebook_icon" />
+
+
+</RelativeLayout>

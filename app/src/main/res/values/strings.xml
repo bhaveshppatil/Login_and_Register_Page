@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Login_and_Register_Page</string>
+    <string name="Register_caption">Lets Join to find Your Friends and Family Location</string>
+    <string name="Login_caption">Lets Join to find Your Friends and Family Location</string>
+</resources>
